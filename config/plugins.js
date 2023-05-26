@@ -14,5 +14,21 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  'users-permissions': {
+    config: {
+      jwtSecret: env('JWT_SECRET') || crypto.randomBytes(16).toString('base64'),
+    },
+  },
+  graphql: {
+    config: {
+       endpoint: "/graphql",
+       shadowCRUD: true,
+       playgroundAlways: true,
+       depthLimit: 100,
+       apolloServer: {
+         tracing: false,
+         },
+       },
+    }
   // ...
 });
