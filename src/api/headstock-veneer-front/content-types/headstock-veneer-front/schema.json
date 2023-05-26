@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headstock_veneer_fronts",
+  "info": {
+    "singularName": "headstock-veneer-front",
+    "pluralName": "headstock-veneer-fronts",
+    "displayName": "Headstock Veneer Front",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "completed_projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::completed-project.completed-project",
+      "mappedBy": "headstock_veneer_front"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "headstock_veneer_front"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
