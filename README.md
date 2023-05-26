@@ -1,57 +1,28 @@
-# 🚀 Getting started with Strapi
+# wood-backend
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+The back end application for the Eric Wood Guitars website. Built with Strapi/ Postgres
 
-### `develop`
+## Description
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+This is an e-commerce website built for a luthier specializing in aucoustic guitars. 
 
-```
-npm run develop
-# or
-yarn develop
-```
+## TABLE OF CONTENTS
+- [Description](#description)
+- [Usage](#usage)
+- [Visuals](#visuals)
+- [Contact](#contact)
 
-### `start`
+## Usage
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+This website may be used to order a custom accoustic guitar, contact the artist directly with any inquiries, learn more about the craft of hand-building guitars, or to view a gallery of instruments that Eric has built thus far. 
 
-```
-npm run start
-# or
-yarn start
-```
+## Visuals
 
-### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-```
-npm run build
-# or
-yarn build
-```
 
-## ⚙️ Deployment
+## Contact
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+If you have any questions or you would like to connect with me, you can contact me via email [mariahmcdaniel@icloud.com](mariahmcdaniel@icloud.com)
 
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+view more of my work by visiting my personal portfolio at [https://mariahmcdaniel.com](https://mariahmcdaniel.com)
