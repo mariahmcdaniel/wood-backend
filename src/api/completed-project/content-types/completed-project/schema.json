@@ -1,0 +1,182 @@
+{
+  "kind": "collectionType",
+  "collectionName": "completed_projects",
+  "info": {
+    "singularName": "completed-project",
+    "pluralName": "completed-projects",
+    "displayName": "Completed Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "build_number": {
+      "type": "integer",
+      "unique": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sold": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "tonewoods": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tone-wood.tone-wood",
+      "inversedBy": "completed_projects"
+    },
+    "date": {
+      "type": "date"
+    },
+    "src": {
+      "type": "string"
+    },
+    "neck_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::neck-wood.neck-wood",
+      "inversedBy": "completed_projects"
+    },
+    "headstock_veneer_front": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headstock-veneer-front.headstock-veneer-front",
+      "inversedBy": "completed_projects"
+    },
+    "fingerboard_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fingerboard-wood.fingerboard-wood",
+      "inversedBy": "completed_projects"
+    },
+    "headstock_veneer_secondary": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headstock-veneer-secondary.headstock-veneer-secondary",
+      "inversedBy": "completed_projects"
+    },
+    "headstock_veneer_back": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headstock-veneer-back.headstock-veneer-back",
+      "inversedBy": "completed_projects"
+    },
+    "heel_cap_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::heel-cap-wood.heel-cap-wood",
+      "inversedBy": "completed_projects"
+    },
+    "sound_board_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sound-board-wood.sound-board-wood",
+      "inversedBy": "completed_projects"
+    },
+    "back_sides_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::back-sides-wood.back-sides-wood",
+      "inversedBy": "completed_projects"
+    },
+    "bindings_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bindings-wood.bindings-wood",
+      "inversedBy": "completed_projects"
+    },
+    "perfling_material": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::perfling-material.perfling-material",
+      "inversedBy": "completed_projects"
+    },
+    "inlay_material": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::inlay-material.inlay-material",
+      "inversedBy": "completed_projects"
+    },
+    "fret_wire_metal": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fret-wire-metal.fret-wire-metal",
+      "inversedBy": "completed_projects"
+    },
+    "end_wedge_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::end-wedge-wood.end-wedge-wood",
+      "inversedBy": "completed_projects"
+    },
+    "bridge_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bridge-wood.bridge-wood",
+      "inversedBy": "completed_projects"
+    },
+    "bridge_plate_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bridge-plate-wood.bridge-plate-wood",
+      "inversedBy": "completed_projects"
+    },
+    "brace_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brace-wood.brace-wood",
+      "inversedBy": "completed_projects"
+    },
+    "neck_block_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::neck-block-wood.neck-block-wood",
+      "inversedBy": "completed_projects"
+    },
+    "heel_block_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::heel-block-wood.heel-block-wood",
+      "inversedBy": "completed_projects"
+    },
+    "kerfling_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kerfling-wood.kerfling-wood",
+      "inversedBy": "completed_projects"
+    },
+    "truss_rod_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::truss-rod-type.truss-rod-type",
+      "inversedBy": "completed_projects"
+    },
+    "neck_support_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::neck-support-wood.neck-support-wood",
+      "inversedBy": "completed_projects"
+    },
+    "bridge_pins_wood": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bridge-pins-wood.bridge-pins-wood",
+      "inversedBy": "completed_projects"
+    }
+  }
+}
