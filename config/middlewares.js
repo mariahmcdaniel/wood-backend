@@ -55,7 +55,6 @@ module.exports = [
           'manifest-src': ["'self'"],
           'frame-src': ["'self'"],
           'frame-ancestors': ["'self'"],
-          'upgrade-insecure-requests': null,
         },
       },
     },
