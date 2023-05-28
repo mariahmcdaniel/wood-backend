@@ -5,6 +5,7 @@ module.exports = ({ env }) => {
   const config = parse(process.env.DATABASE_URL);
 
   const devConfig = {
+    connection:{
     client: 'postgres',
     connection: {
       host: env('DATABASE_HOST', 'localhost'),
@@ -16,9 +17,11 @@ module.exports = ({ env }) => {
       ssl: false
     },
     debug: false,
+  }
   };
 
   const prodConfig = {
+    connection: {
     client: 'postgres',
     connection: {
       host: config.host,
@@ -34,8 +37,9 @@ module.exports = ({ env }) => {
       ssl: env.bool('DATABASE_SSL', false),
     },
     debug: false,
+    }
   };
 
-  return env("NODE_ENV", "development") === "production" ? prodConfig : devConfig
+  return env("NODE_ENV", "development") === "production" ? prodConfig : devConfig;
 
 };
