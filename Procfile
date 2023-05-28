@@ -1,1 +1,1 @@
-web: node strapi start
+web: npm run strapi start
